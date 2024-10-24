@@ -124,9 +124,13 @@
   .home p {
     font-size: 1rem;
   }
+  .home .social-icons {
+    justify-content: center; /* Center the social icons */
+    margin-top: 20px; /* Add some space at the top if needed */
+  }
 
   .home .social-icons a {
-    font-size: 1.2rem;
+    font-size: 24px; /* Adjust icon size for better visibility */
   }
 
   .home .home-img {
@@ -136,7 +140,7 @@
     border: 2px solid #ff154c;
     display: grid;
     place-items: center;
-    margin-top: 100px;
+    margin-top:10px;
   }
   .home-img img {
     width: 240px; /* Increase the image size for smaller screens */
