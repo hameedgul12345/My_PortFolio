@@ -1,0 +1,132 @@
+/* Header Media Query */
+
+/* Styles for large screens (default) */
+#menu-icon,
+#close-icon {
+  display: none;
+}
+
+/* Default Navbar for large screens */
+.navbar {
+  display: flex;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 100px;
+    right: -100%;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.5s ease-in-out;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Hamburger Menu Icon */
+  #menu-icon {
+    display: block;
+    font-size: 3.2rem; /* Ensure consistent size */
+    color: #ff154c; /* Match color */
+    cursor: pointer;
+  }
+
+  /* Close Icon */
+  #close-icon {
+    display: none;
+    font-size: 3.2rem; /* Ensure consistent size with burger menu */
+    color: #ff154c; /* Match color with burger menu */
+    cursor: pointer;
+  }
+
+  /* When Navbar is active, swap icons */
+  .navbar.active #close-icon {
+    display: block;
+  }
+
+  .navbar.active #menu-icon {
+    display: none;
+  }
+
+  .navbar a {
+    font-size: 2.5rem;
+  }
+}
+/* Home Secition Media Query */
+
+/* Media query for smaller screens (like tablets) */
+@media (max-width: 768px) {
+  .home {
+    position: relative;
+    top: 100px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .home-content {
+    text-align: center;
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
+  .home .text-animation {
+    font-size: 1rem;
+  }
+  .home p {
+    font-size: 1.5rem;
+  }
+
+  .home .home-img {
+    order: -1; /* Move the image to the top */
+    margin-bottom: 20px;
+  }
+  .home-img img {
+    width: 240px; /* Increase the image size for smaller screens */
+  }
+  .home .social-icons {
+    margin-top: 15px;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+  .home {
+    padding: 10px;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+  .home .text-animation {
+    font-size: 1rem;
+  }
+  .home p {
+    font-size: 1rem;
+  }
+
+  .home .social-icons a {
+    font-size: 1.2rem;
+  }
+
+  .home .home-img img {
+    max-width: 250px;
+    margin-top: 20px;
+  }
+}
