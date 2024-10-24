@@ -96,6 +96,8 @@
   .home .home-img {
     order: -1; /* Move the image to the top */
     margin-bottom: 20px;
+    border-radius: 50%;
+   border: 2px solid #ff154c;
   }
   .home-img img {
     width: 240px; /* Increase the image size for smaller screens */
