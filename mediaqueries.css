@@ -115,6 +115,10 @@
     padding: 10px;
   }
 
+  .timeline-section {
+    display: block;
+  }
+
   .home h1 {
     font-size: 2rem;
   }
@@ -133,6 +137,19 @@
     font-size: 24px; /* Adjust icon size for better visibility */
   }
 
+  .timeline-section {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #fcfcfc;
+  }
+  .timeline-items {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
   .home .home-img {
     order: -1; /* Move the image to the top */
     margin-bottom: 20px;
@@ -140,10 +157,53 @@
     border: 2px solid #ff154c;
     display: grid;
     place-items: center;
-    margin-top:10px;
+    margin-top: 10px;
   }
   .home-img img {
     width: 240px; /* Increase the image size for smaller screens */
-    
   }
+  /* Media Query Education */
+  
+.timeline-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 15px;
+  background: #fcfcfc;
+}
+
+.timeline-items {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-content {
+  padding: 20px;
+  text-align:left;
+}
+
+.timeline-content #education-heading1, 
+.timeline-content #education-heading2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#education-h1, #education-h2 {
+  font-size: 9px;
+}
+
+#education-p1, #education-p2 {
+  font-size: 7px;
+}
+
 }

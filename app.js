@@ -6,8 +6,8 @@ var typed = new Typed(".text-animation",
             "Designer"
 
         ],
-        typeSpeed: 120,
-        backSpeed: 90,
+        typeSpeed: 140,
+        backSpeed: 140,
         loop:true
         
     }
