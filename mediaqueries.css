@@ -205,5 +205,51 @@
 #education-p1, #education-p2 {
   font-size: 7px;
 }
+/* About */
+#about {
+  flex-direction: column;
+  padding: 1rem 5% 5rem;
+  margin-top: 100px;
+}
 
+.about-image, .about-content {
+  width: 100%;
+  text-align: center;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-img {
+  width: 57%;
+  margin: 0 auto;
+}
+
+.about-img img {
+  width: 50vw;
+  border: 15px solid white;
+}
+
+.about-content h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.about-content h3 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 14px;
+  margin: 1rem 0 2rem;
+
+}
+
+.btn {
+  font-size: 14px;
+  padding: 0.8rem 1.2rem;
+}
 }
